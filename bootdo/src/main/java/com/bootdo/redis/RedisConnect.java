@@ -14,7 +14,7 @@ public class RedisConnect {
             Jedis jedis = new Jedis(GetRedisConfig.getRedisIp(), GetRedisConfig.getRedisPort());
             jedis.auth(GetRedisConfig.getRedisPassword());
             //设值，Redis中的集合命令对应Jedis的方法名称
-            jedis.set("linKey001", "linValue001");
+            jedis.set("linKey001", "linValue0011");
             String result = jedis.get("linKey001");
             System.out.println(result);
             //用完关闭连接
