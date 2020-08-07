@@ -1,0 +1,8 @@
+☆☆☆☆☆☆su☆☆☆☆☆☆
+1：修改文件只读状态
+chattr -i 文件名    让只读文件可编辑
+chattr +i 文件名    让文件只读
+2：复制文件
+cp file newFile
+3：重命名
+mv fileName newFileName
