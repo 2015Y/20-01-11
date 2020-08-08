@@ -1,0 +1,20 @@
+一、使用命令来操作文件传输
+使用命令来传输文件快捷键ALT+P
+sftp> pwd  #显示当前路径
+/root
+sftp> cd /home/     #进入home目录
+sftp> pwd
+/home
+sftp> cd ..  #进入父目录
+sftp> pwd
+/
+sftp> cd /home/tomcat-7.0/
+sftp> pwd
+/home/tomcat-7.0
+sftp> put H:/shareFolder/hello.txt   #put命令是将windows系统下的文件上传到linux系统下面，后面跟文件路径 名称
+sftp> get /home/hello.txt   # 这个刚好与put相反，是从linux系统下下载文件到windows系统下面，后面跟路径名称
+
+二、使用图像选择文件上传，可以多文件
+使用rz命令可以在windows系统下选择文件到linux系统下（注意r是接收的意思，这个的接收是相对于linux服务器）
+# sz /home/hello.txt
+设置默认上传和下载的路径
